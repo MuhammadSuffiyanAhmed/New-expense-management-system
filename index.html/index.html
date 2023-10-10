@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+</head>
+<body class="container">
+    <div class="heading">
+        <h3>Welcome to, <em id="Users_name"></em></h3>
+    </div>
+    <div id="modulasbtn">
+        <abbr title="Your profile">
+            <button class="btn" id="imgPreview" onclick="clicked()"></button>
+        </abbr>
+    </div>
+    <!-- hidden profile modulas -->
+    <div id="modulas">
+        <div class="head">
+            <div class="header">
+                <h1><strong>hello world</strong>
+            </div>
+            <div class="key">
+                <label  for="myFileInput"><i class="fa-solid fa-camera"></i><label>
+                <input type="file" name="" id="myFileInput">
+            </div>
+            <p id="Name"> 
+
+            </p>
+
+        </div>
+        <div class="contact">
+            <p id="name">
+
+            </p>
+            <p id="email">
+
+            </p>
+            <p id="pass">
+
+            </p>
+
+        </div>   
+        <div class="btns">
+            <button id="closemodulas" onclick="closemodulas()">Close</button>
+            <button id="closemodulas" onclick="logout()">Logout</button>
+        </div>        
+
+    </div>
+
+    <!-- expense managment system -->
+    <div class="managmen">
+        <div class="inp row justify-content-center mb-4 oneee">
+
+            <input type="text"   class="form-control mb-2 sufa" placeholder="Title"   name="" id="emtext" />
+            <input type="number"   class="form-control mb-12 sufa" placeholder="Amount"   name="" id="emnumber">
+            <input type="date"   class="form-control mb-2 sufa" placeholder="date"   name="" id="emdate">
+            <button id="btn" class="btn btn-success" onclick="add()">Add</button>
+        </div>
+
+
+    </div>
+    <table class="table table-striped table-bordered  sss">
+        <thead>
+            <tr>
+                <th id="S_no">S.no</th>
+                <th>Description</th>
+                <th>Ammount</th>
+                <th>Date</th>
+                <th id="eide">Edit </th>
+                <th id="eide">Delete </th>
+                <!-- <th id="updatedd">Update</th> -->
+
+            </tr>
+        </thead>
+        <tbody id="expense_managment"></tbody>
+
+    </table>
+
+
+ <!-- hidden popup -->
+    <div id="popup">
+        <span>
+            <h1 contenteditable="true">edit</h1>
+        </span>
+        <div>
+            <textarea placeholder="Descriptions" id="description"></textarea>
+            <input type="number" placeholder="Amount" id="amount">
+            <input type="date" id="date">
+        </div>
+        <span>
+
+            <button type="submit" onclick="saveData()" id="save"> save</button>
+            <button type="submit" onclick="updateData()" id="update"></i>
+                Edit</button>
+        </span>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,478 @@
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(13, 13, 237, 0.792) , rgba(138, 5, 138, 0.721));
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+#modulasbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+    margin-left: 2vw;
+    border: none;
+    width: 50px;
+    height: auto;
+    position: relative;
+    right: 80px;
+    /* left: 0px; */
+    /* border:  1px solid black; */
+}
+#modulasbtn button{
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;  
+}
+
+#modulas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 10px;
+    border-radius: 30px;
+    background-color: white;            
+    visibility: hidden;
+    backdrop-filter: blur() ;   
+}
+#closemodulas{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    top: 80px;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 3px solid black;
+    outline: none;
+    transition: all .05s ease .01s; 
+    text-transform: capitalize; 
+    cursor: pointer;
+   
+}
+#closemodulas:active{
+    border: 3px double black;
+    font-size:15px;
+    font-weight:bolder;
+
+}
+
+#imgPreview{
+    position: fixed;
+    top: 30px;
+    /* bottom: 30px; */
+    width: 300px;
+    height:300px;
+    border-radius: 200px;
+    display: flex;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: auto;
+    border: 1px solid black;
+
+}
+#myFileInput{
+    display: none;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 650px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: rgb(73, 174, 73);
+}
+label i{
+    
+    cursor: pointer;
+
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    position: relative;
+    top: 70px;
+    color: white;
+    
+}
+#Users_name{
+    font-size: 27px;
+    font-weight: 700;
+}
+
+h1{
+    position: relative;
+    /* bottom: 40px; */
+    /* right: 50px; */
+}
+.key{
+    position: relative;
+    left: 200px;
+    bottom: 90px;
+    
+} 
+.contact{
+    position: relative;
+    bottom: 30px;
+}
+.btns{
+    position: relative;
+    bottom: 50px;
+    /* gap: 10px; */
+}
+
+
+
+
+#popup{
+    width: 40%;
+    height:auto;
+    border:5px solid black;
+    border-radius: 25px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity:0;
+    z-index: -1;
+    background-color: white;
+    
+}
+
+
+
+#popup span:nth-child(1){
+
+padding:5%;    
+ text-transform: capitalize;
+display: flex;    
+justify-content: space-between;
+ align-items: center;
+}
+#popup span:nth-child(1)>button:nth-child(2){
+background: none;
+outline: none;
+border: none;
+color:white;
+ width: 20px
+;height: 20px;
+}
+#popup span:nth-child(1)>button:nth-child(2):active{
+font-size: 15px;
+color: black;
+}
+#popup span:nth-child(3){
+background: none;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 5%
+}
+#popup span:nth-child(3)>h3{
+color:red;
+overflow: auto;
+}
+#save,#update{
+background: #0074ff ;
+color:white;
+border:none ;
+outline: none;
+transition: all .05s ease .01s;
+width: 18%;
+height: 30px;
+border-radius: 5px;
+text-transform: capitalize; 
+}
+#popup span:nth-child(3)>button:nth-child(2){
+display: none;
+}
+#save:active,#update:active{
+border:3px double white;
+font-size:15px;
+font-weight:bolder;
+}
+#popup div{
+height: 80%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+}
+#popup div input,textarea{
+width: 80%;
+height: 50px;
+ margin: 5%;
+padding: 0 5% 0 5%;
+border-radius:10px;
+background: whitesmoke;
+outline: none;
+ border: 1px solid black;
+font-size: 20px;
+font-weight: bold;
+}
+
+.Edit{
+cursor: pointer;
+
+}
+.edit:hover{
+color: #0074ff;
+}
+.Deleted{
+cursor: pointer;
+}
+i:hover{
+color: rgba(204, 40, 40, 0.915);
+
+}
+.inp{
+
+gap: 15px;
+}
+.sufa{
+width: 300px;
+height: 50px;
+position: relative;
+bottom: 280px;
+
+}
+#btn{
+width: 100px;
+height: 50px;
+position: relative;
+bottom: 280px;
+
+}
+.sss{
+    position: relative;
+    bottom: 280px;
+    /* backdrop-filter: blur() ;     */
+
+}
+#expense_print{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 3vh;
+margin-left: 2vw;
+border: none;
+width: 50px;
+height: 50px;
+}
+#expense_print button{
+width: 50px;
+height: 50px;
+font-size: 20px;
+border: none;
+border-radius: 50px;
+}
+#modulasbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+    margin-left: 2vw;
+    border: none;
+    width: 50px;
+    height: auto;
+    /* border:  1px solid black; */
+}
+#modulasbtn button{
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;  
+}
+
+#modulas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 10px;
+    border-radius: 30px;
+    background-color: white;            
+    visibility: hidden;
+
+}
+#closemodulas{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    top: 80px;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 3px solid black;
+    outline: none;
+    transition: all .05s ease .01s; 
+    text-transform: capitalize; 
+    cursor: pointer;
+   
+}
+#closemodulas:active{
+    border: 3px double black;
+    font-size:15px;
+    font-weight:bolder;
+
+}
+
+#imgPreview{
+    position: fixed;
+    top: 30px;
+    /* bottom: 30px; */
+    width: 300px;
+    height:300px;
+    border-radius: 200px;
+    display: flex;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: auto;
+    border: 1px solid black;
+
+}
+#myFileInput{
+    display: none;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 650px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: rgb(73, 174, 73);
+}
+label i{
+    
+    cursor: pointer;
+
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    position: relative;
+    top: 70px;
+
+}
+
+h1{
+    position: relative;
+    /* bottom: 40px; */
+    /* right: 50px; */
+}
+.key{
+    position: relative;
+    left: 200px;
+    bottom: 90px;
+    
+} 
+.contact{
+    position: relative;
+    bottom: 30px;
+}
+.btns{
+    position: relative;
+    bottom: 50px;
+    /* gap: 10px; */
+}
+
+@media (max-width: 600px) {
+    /* body{
+        width: 100%;
+        height: 640px;
+    } */
+    #S_no{
+        display: none;
+    }
+    .farwa{
+        display: none;
+    }
+    .expense_managment{
+        width: auto;
+    }
+    /* #eide{
+        display: none;
+    }
+    .Edit{
+        display: none; */
+    /* } */
+   
+    #popup{
+        width: 360px;
+        /* height:80vh; */
+        position: relative;
+        bottom: 520px;
+        
+        /* left: 1px; */
+          /* background: linear-gradient(to bottom,rgba(0, 116, 255,.6),rgba(255, 255, 255,.1)); */
+    }
+        #popup span:nth-child(3)>button:nth-child(2){
+            width: 20%;
+        }
+        #popup div{
+            height: 70%; justify-content: space-evenly; 
+        }
+        #popup div input,textarea{
+            height: 60px; padding:  5%; font-size: 15px;
+        }
+        #popup div input:hover,textarea:hover{
+            border: 3px solid #cfcfcf;
+        }
+        #popup span:nth-child(3)>button:nth-child(3){
+            width: 25%;
+        }
+    }
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
